@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
          String[] professor_name=data_professor.getName();
 
         ArrayAdapter<String> arrayAdapter_string=new ArrayAdapter<String>(context,R.layout.list_item,R.id.name_professor,professor_name);
-        ArrayAdapter<Switch> arrayAdapter_switch=new ArrayAdapter<Switch>(context,R.layout.list_item,R.id.status_switch);
+
         list_professor.setAdapter(arrayAdapter_string);
-        list_professor.setAdapter(arrayAdapter_switch);
+
     }
 }
