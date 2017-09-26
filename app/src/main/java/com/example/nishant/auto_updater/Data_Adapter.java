@@ -41,6 +41,11 @@ public class Data_Adapter extends ArrayAdapter<Data_Professor> {
 
         TextView name_professor=convertView.findViewById(R.id.name_professor);
         Switch status_switch=convertView.findViewById(R.id.status_switch);
+        Data_Professor data_professor=new Data_Professor();
+        String[] professor_name=data_professor.getName();
+        for (String s: professor_name){
+            name_professor.setText(s);
+        }
 
           return super.getView(position,convertView,parent);
     }
